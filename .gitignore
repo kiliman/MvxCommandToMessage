@@ -1,5 +1,6 @@
 #Xamarin auto-generated
 Resource.Designer.cs
+*.TMP
 
 #OS junk files
 [Tt]humbs.db
