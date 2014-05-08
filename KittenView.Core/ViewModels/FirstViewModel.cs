@@ -3,9 +3,9 @@ using System.Windows.Input;
 using Cirrious.CrossCore;
 using Cirrious.MvvmCross.Plugins.Messenger;
 using Cirrious.MvvmCross.ViewModels;
-using KittenView.Core.Converters;
 using KittenView.Core.Plugins;
 using KittenView.Core.Services;
+using KittenView.Core.Messages;
 
 namespace KittenView.Core.ViewModels
 {

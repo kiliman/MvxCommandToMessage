@@ -34,8 +34,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="Converters\KittenAcceptedMessage.cs" />
-    <Compile Include="Converters\KittenAcceptedMessageValueConverter.cs" />
+    <Compile Include="Messages\KittenAcceptedMessage.cs" />
+    <Compile Include="Converters\MessageToCommandValueConverter.cs" />
     <Compile Include="Plugins\IToastPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\Kitten.cs" />

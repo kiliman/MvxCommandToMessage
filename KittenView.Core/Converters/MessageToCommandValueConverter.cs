@@ -9,14 +9,14 @@ using KittenView.Core.Services;
 
 namespace KittenView.Core.Converters
 {
-    public class KittenAcceptedMessageValueConverter : MvxValueConverter<Kitten, ICommand>
+    public class MessageToCommandValueConverter : MvxValueConverter<string, ICommand>
     {
-        protected override ICommand Convert(Kitten kitten, Type targetType, object parameter, CultureInfo culture)
+        protected override ICommand Convert(string typeName, Type targetType, object parameter, CultureInfo culture)
         {
             return new MvxCommand(() =>
             {
                 var messenger = Mvx.Resolve<IMvxMessenger>();
-                var message = new KittenAcceptedMessage(this, kitten);
+                var message = (MvxMessage)Activator.CreateInstance(Type.GetType(typeName), this, parameter);
                 messenger.Publish(message);
             });
         }
