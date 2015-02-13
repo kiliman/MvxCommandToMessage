@@ -8,7 +8,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_margin="10dp"
-        local:MvxBind="ImageUrl ImageUrl; Click MessageToCommand('KittenView.Core.Messages.KittenAcceptedMessage', .)" />
+        local:MvxBind="ImageUrl ImageUrl; Click CommandToMessage('KittenView.Core.Messages.KittenAcceptedMessage', .)" />
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
